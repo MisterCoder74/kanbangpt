@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kanban Board</title>
+<link rel="stylesheet" href="kanban.css">
+  </head>
+  <body>
+    <h1>Vivacity Kanban Board</h1>
+    
+    <div class="container">
+    <div class="commands">
+<center>
+        <h2>Commands</h2>
+    <textarea id="card-title">Type card text here...</textarea>
+    <br>
+    <button id="add-card-button">Add Card</button>
+<label for="column-select"> to Column:</label>
+<select id="column-select">
+  <option value="todo">To-Do</option>
+  <option value="doing">Doing</option>
+  <option value="done">Done</option>
+  <option value="repo">Repository</option>
+</select>
+</center>
+    </div>
+    
+<div class="board">
+    <div class="column" id="todo-column">
+      <h2>To Do</h2>
+    </div>
+
+    <div class="column" id="doing-column">
+      <h2>Doing</h2>
+    </div>
+
+    <div class="column" id="done-column">
+      <h2>Done</h2>
+    </div>
+    
+        <div class="column" id="repo-column">
+      <h2>Repository</h2>
+    </div>
+
+   
+</div>   
+
+</div>
+
+    <script src="kanban.js"></script>
+  </body>
+</html>
